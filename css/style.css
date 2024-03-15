@@ -1,0 +1,235 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper{
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/wall.png) no-repeat center/cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    width: 496px;
+    backdrop-filter: blur(10px);
+    background: rgba(233, 233, 233, 0.25);
+    margin-left: auto;
+    height: 100%;
+    overflow: auto;
+}
+
+.container_forms{
+    max-width: 340px;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+
+.card_switch input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.card_switch label{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgb(2, 72, 2);
+    cursor: pointer;
+    position: relative;
+    transition: .3s linear;
+    box-shadow: inset 0 0 2px #000;
+}
+
+.card_switch label::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 168px;
+    height: 32px;
+    border-radius: 35px;
+    background: green;
+    transition: .3s linear;
+}
+
+.card_switch input:checked + label::before{
+    background: rgb(110, 11, 11);
+    transform: translateX(96%);
+}
+
+.card_switch span{
+     color: aliceblue;
+     flex: 1 1 50%;
+     z-index: 1;
+}
+
+.main_check{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 75px 0 29px;
+}
+
+.registr p{
+    padding-bottom: 15px;
+}
+
+.email input{
+    padding-left: 20px;
+    width: 340px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #929191;
+    outline: none;
+    border: none;
+}
+
+.password input{
+    padding-left: 20px;
+    width: 340px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #929191;
+    outline: none;
+    border: none;
+}
+
+input::placeholder{
+    color: #FFF;
+    padding: 20px 15px;
+    text-align: left;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.remember_bot{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 125px;
+    align-items: center;
+}
+
+.remember_bot a{
+    color: #153416;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+.remember label{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.remember input{
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid green;
+}
+
+.submit_bt {
+    width: 340px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #153416;
+    outline: none;
+    border: 1px solid rgb(0, 190, 0);
+    margin-top: 30px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.submit_bt:hover{
+    background: green;
+}
+
+.submit_bt:focus{
+    background: rgb(0, 255, 0);
+}
+.without{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.without_1{
+    color: #153416;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.without_2{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.or{
+    text-align: center;
+    margin-top: 30px;
+    color: #153416;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.link_svg .link_spanS {
+	border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+	line-height: 10px;
+	padding: 2px;
+	transform: rotate(45deg);
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+
+.link_icon {
+	width: 30px;
+	height: 30px;
+	fill: none;
+}
+
+.sprite a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
