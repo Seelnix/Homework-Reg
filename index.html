@@ -1,64 +1,166 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Checkbox</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WebStudio</title>
 </head>
 <body>
-<div class="wrapper">
-    <div class="container">
-        <div class="container_forms">
-            <form class="container_switch" action="#">
-                <div class="card_switch">
-                    <input type="checkbox" id="switch">
-                    <label for="switch">
-                        <span>Увійти</span>
-                        <span>Реєстрація</span>
-                    </label>
-                    <h2 class="main_check">Вход</h2>
-                </div>
-                <div class="registr">
-                <p class="email">
-                    <input type="email" name="email" placeholder="Введіть E-mail" required>
-                </p>
-                <p class="password">
-                    <input type="password" name="password" placeholder="Пароль" required id="password">
-                </p>
-                </div>
-                <div class="remember_bot">
-                <div class="remember">
-                    <input type="checkbox" class="remember" id="remember me" name="remember me" value="yes">
-                    <label for="remember me">Запам'ятати мене</label>
-                </div>
-                <div class="forgot">
-                    <a href="#">Забули пароль</a>
-                </div>
-                </div>
-                <input type="submit" class="submit_bt" value="Відправити">
-                <div class="without">
-                    <p class="without_1">Ще немає акаунту?</p>
-                    <a href="#" class="without_2"> Зареєструватися</a>
-                </div>
-                <p class="or">Чи увійдіть через</p>
-                <div class="sprite">
-                <li>
-                    <a href="#" class="link_svg">
-                        <span class="link_span">
-                            <svg class="link_icon">
-                                <use href="/images/sprite.svg#vector"></use>
-                            </svg>
-                        </span>
-                    </a>
-                </li>
-                </div>
-            </form>
+    <!-- Header -->
+	<header class="header">
+		<div class="container header_container">
+			<a class="header_logo" href="#">
+				<img src="images/logo.svg" alt="WebStudio" width="145" height="31">
+			</a>
 
-        </div>
+			<ul class="header_menu">
+				<li class="header_menu_item">
+					<a class="active" href="#">Studio</a>
+				</li>
+				<li class="header_menu_item">
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li class="header_menu_item">
+					<a href="#">Contacts</a>
+				</li>
+			</ul>
 
-    </div>
+			<ul class="header_list">
+				<li class="header_list_item">
+					<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+				</li>
+				<li class="header_list_item">
+					<a href="tel:+380961111111">+38 096 111 11 11</a>
+				</li>
+			</ul>
+			<div class="header_burger">
+				<span></span>
+				<!--input id="menu_burger" type="checkbox">
+				<label class="menu_btn" for="menu_burg">
+				  <span></span>
+				</label>
+				<ul class="menu_box">
+				  <li><a href="index.html" class="menu_item">Studio</a></li>
+				  <li><a href="portfolio.html" class="menu_item">Portfolio</a></li>
+				  <li><a href="" class="menu_item">Contacts</a></li>
+				  <li><a href="mailto:info@devstudio.com" class="menu_item">info@devstudio.com</a></li>
+				  <li><a href="tel:+380961111111" class="menu_item">+38 096 111 11 11</a></li>
+				</ul> 
+			  </div-->
+			</div>
+		</div>
+	</header>
 
-</div>
+    
+    <main>
+        <!-- Hero -->
+		<section class="hero">
+			<div class="container">
+				<div class="hero_box">
+					<h1 class="hero_title">Effective solutions for your business</h1>
+					<button class="hero_btn">Order service</button>
+				</div>
+			</div>
+		</section>
+
+        <!-- Details -->
+        <section class="details">
+			<div class="container">
+				<div class="details_cards">
+					<!-- card item -->
+					<div class="details_card">
+						<h2 class="details_card_title">Attention to detail</h2>
+						<p class="details_card_desc">Ideological considerations, as well as the beginning of the daily work of forming a position.</p>
+					</div>
+					<!-- card item -->
+					<div class="details_card">
+						<h2 class="details_card_title">Punctuality</h2>
+						<p class="details_card_desc">The task of the organization, in particular the scope and location of personnel training, entails.</p>
+					</div>
+					<!-- card item -->
+					<div class="details_card">
+						<h2 class="details_card_title">Planning</h2>
+						<p class="details_card_desc">Equally, consultation with a broad asset is largely conditional.</p>
+					</div>
+					<!-- card item -->
+					<div class="details_card">
+						<h2 class="details_card_title">Modern technologies</h2>
+						<p class="details_card_desc">The significance of these problems is so obvious that the implementation of planned targets.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        		<!-- WORK -->
+		<section class="work">
+			<div class="container">
+				<h2 class="work_title subtitle">What are we doing</h2>
+				<div class="work_cards">
+					<div class="work_card">
+						<img src="images/work_1.jpg" alt="content image" width="370" height="294">
+					</div>
+					<div class="work_card">
+						<img src="images/work_2.jpg" alt="content image" width="370" height="294">
+					</div>
+					<div class="work_card">
+						<img src="images/work_3.jpg" alt="content image" width="370" height="294">
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- TEAM -->
+		<section class="team">
+			<div class="container">
+				<h2 class="team_title subtitle">Our team</h2>
+
+				<div class="team_cards">
+					<!-- 1 -->
+					<div class="team_card">
+						<img class="team_card_image" src="images/team_1.jpg" alt="Igor Demyanenko" width="270" height="260">
+						<h3 class="team_card_title">Igor Demyanenko</h3>
+						<p class="team_card_desc">Product Designer</p>
+					</div>
+					<!-- 2 -->
+					<div class="team_card">
+						<img class="team_card_image" src="images/team_2.jpg" alt="Igor Demyanenko" width="270" height="260">
+						<h3 class="team_card_title">Olga Repina</h3>
+						<p class="team_card_desc">Frontend Developer</p>
+					</div>
+					<!-- 3 -->
+					<div class="team_card">
+						<img class="team_card_image" src="images/team_3.jpg" alt="Igor Demyanenko" width="270" height="260">
+						<h3 class="team_card_title">Nikolay Tarasov</h3>
+						<p class="team_card_desc">Marketing</p>
+					</div>
+					<!-- 4 -->
+					<div class="team_card">
+						<img class="team_card_image" src="images/team_4.jpg" alt="Igor Demyanenko" width="270" height="260">
+						<h3 class="team_card_title">Mikhail Ermakov</h3>
+						<p class="team_card_desc">UI Designer</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+    </main>
+
+    <footer class="footer">
+		<div class="container">
+			<a class="footer_logo" href="#">
+				<img src="images/footer_logo.svg" alt="footer_logo" width="145" height="31">
+			</a>
+			<address class="footer_address">
+				<p>Kharkov, Pobedy Ave., 26</p>
+				<a href="mailto:info@example.com">info@example.com</a>
+				<a href="tel:+380991111111">+38 099 111 11 11</a>
+			</address>
+		</div>
+	</footer>
 </body>
 </html>
